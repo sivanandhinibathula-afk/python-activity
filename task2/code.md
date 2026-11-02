@@ -18,9 +18,9 @@ Develop a Python program to calculate household electricity bills based on multi
 11. Display monthly bills and unusual increases.
 12. Stop the program.
 3. Flowchart
-4. ``` mermaid
+4. 
 . <img width="1046" height="1600" alt="WhatsApp Image 2026-11-02 at 7 26 47 PM" src="https://github.com/user-attachments/assets/c9059211-6e09-4fb7-937f-e9dc4904f3d8" />
-```mermaid
+
 
 5. Source Code (Python)
 
