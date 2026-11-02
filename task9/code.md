@@ -1,10 +1,6 @@
 1. Problem Statement
 Develop a Python program to analyze a travel budget by converting expenses from different currencies into a base currency using supplied exchange rates. The program calculates conversion fees, total travel expenses, and compares the total spending against the planned budget. It also identifies the largest expense category and displays whether the travel expenses are within or exceed the budget.
-
-
 3. Algorithm
-
-4. 
 1. Start the program.
 2. Enter the base currency.
 3. Enter the number of expense categories.
