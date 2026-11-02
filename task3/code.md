@@ -96,6 +96,8 @@ else:
             print("Patient Classification:", status)
             print("Billing Completed Successfully.")
 5. Sample Input
+
+   
 Enter patient name: Ravi
 Enter patient category (Senior/Regular/General): senior
 
@@ -105,6 +107,9 @@ Enter treatment charges: 2500
 
 Enter amount paid: 3000
 6. Sample Output
+
+
+
 ----- Hospital Bill -----
 
 Patient Name: Ravi
