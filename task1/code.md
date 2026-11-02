@@ -36,80 +36,8 @@ The system should:
 10. Stop.
 3. Flowchart
 4. 
-             +-------------+
-             |    START    |
-             +-------------+
-                    |
-                    v
-        +-----------------------+
-        | Enter Number of       |
-        | Students              |
-        +-----------------------+
-                    |
-                    v
-        +-----------------------+
-        | Enter Student Details |
-        | Name, Marks, Subjects,|
-        | Attendance, Income    |
-        +-----------------------+
-                    |
-                    v
-        +-----------------------+
-        | Check Eligibility     |
-        | Aggregate >= 75       |
-        | Subject Marks >= 50   |
-        | Attendance >= 75      |
-        | Income <= 250000      |
-        +-----------------------+
-                    |
-                    v
-              +-----------+
-              | Eligible? |
-              +-----------+
-                /       \
-              Yes        No
-               |          |
-               v          v
-      +----------------+  +----------------+
-      | Add Student to |  | Add Student to |
-      | Eligible List  |  | Rejected List  |
-      +----------------+  +----------------+
-               |                  |
-               +--------+---------+
-                        |
-                        v
-             +--------------------+
-             | All Students       |
-             | Processed?         |
-             +--------------------+
-                  /       \
-                No         Yes
-                |           |
-                +----<------+
-                            |
-                            v
-             +-----------------------+
-             | Sort Eligible Students|
-             | Marks: Descending     |
-             | Attendance: Descending|
-             | Income: Ascending     |
-             +-----------------------+
-                            |
-                            v
-             +-----------------------+
-             | Assign Student Ranks  |
-             +-----------------------+
-                            |
-                            v
-             +-----------------------+
-             | Display Scholarship  |
-             | Allocation Results    |
-             +-----------------------+
-                            |
-                            v
-                    +-------------+
-                    |     END     |
-                    +-------------+
+   
+<img width="972" height="1600" alt="image" src="https://github.com/user-attachments/assets/01bb6aeb-c5d6-4d8b-8c0e-9656a8e77006" />
 
 
 
