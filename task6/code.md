@@ -1,4 +1,4 @@
-. Problem Statement
+1.Problem Statement
 Develop a Python program to calculate railway fares for multiple passengers based on distance slabs, travel classes, age-based concessions, and reservation fees. The program should also calculate cancellation penalties and refund amounts when tickets are cancelled, and display the final fare details for all passengers.
 2. Algorithm
 1. Start the program.
@@ -27,38 +27,14 @@ Develop a Python program to calculate railway fares for multiple passengers base
 3. Flowchart (Mermaid Code)
 
 
-```mermaid
-flowchart TD
-A([start])-->B[/Enter number of passengers/]
-B-->C[/Enter passenger name, age, distance and class/]
-C-->D[Calculate basic fare]
-D-->E[Calculate class fare]
-E-->F{Check age}
-F--Below 5-->G[Free fare]
-F--60 and above-->H[Apply 40% discount]
-F--Others-->I[No discount]
-G-->J[Add reservation fee]
-H-->J
-I-->J
-J-->K[Calculate final fare]
-K-->L{Cancel ticket?}
-L--Yes-->M[Calculate cancellation penalty]
-L--No-->N[Confirm ticket]
-M-->O[Calculate refund amount]
-N-->P[Display passenger details]
-O-->P
-P-->Q{More passengers?}
-Q--Yes-->C
-Q--No-->R[Calculate total amount]
-R-->S[/Display final bill/]
-S-->T([stop])
-```mermaid
+<img width="1059" height="1603" alt="image" src="https://github.com/user-attachments/assets/6df20781-5018-4976-802e-38bb9fb03f13" />
+
 
 
 4. Source Code (Python)
 
    
-# Railway Fare and Reservation Calculator
+
 
 total_amount = 0
 
@@ -75,12 +51,12 @@ for i in range(n):
     print("Classes: Sleeper, AC3, AC2")
     travel_class = input("Enter travel class: ").upper()
 
-    # Validate passenger details
+    
     if age < 0 or distance <= 0:
         print("Invalid passenger details!")
         continue
 
-    # Calculate basic fare
+    
     if distance <= 100:
         basic_fare = distance * 1
 
@@ -90,7 +66,7 @@ for i in range(n):
     else:
         basic_fare = (100 * 1) + (200 * 1.5) + (distance - 300) * 2
 
-    # Calculate class fare
+    
     if travel_class == "SLEEPER":
         class_fare = basic_fare
 
@@ -104,7 +80,7 @@ for i in range(n):
         print("Invalid travel class!")
         continue
 
-    # Apply age concession
+    
     if age < 5:
         discount = class_fare
         reservation_fee = 0
@@ -117,7 +93,7 @@ for i in range(n):
         discount = 0
         reservation_fee = 50
 
-    # Calculate final fare
+    
     fare = class_fare - discount + reservation_fee
 
     print("\n----- Ticket Details -----")
@@ -128,7 +104,7 @@ for i in range(n):
     print("Reservation Fee: Rs.", reservation_fee)
     print("Final Fare: Rs.", round(fare, 2))
 
-    # Cancellation details
+    
     cancel = input("Cancel ticket? (yes/no): ").lower()
 
     if cancel == "yes":
