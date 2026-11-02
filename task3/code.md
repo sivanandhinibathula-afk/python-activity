@@ -24,27 +24,26 @@ Develop a Python program to calculate hospital bills by considering consultation
  <img width="1044" height="1599" alt="WhatsApp Image 2026-11-02 at 7 43 41 PM" src="https://github.com/user-attachments/assets/8dcf59e2-fb02-4520-8895-47dcf81e5110" />
  4. Source Code (Python)
  5. 
-# Hospital Billing and Patient Classification
 
-# Get patient details
+
+
 name = input("Enter patient name: ")
 
 category = input("Enter patient category (Senior/Regular/General): ").lower()
 
-# Get hospital charges
 consultation = float(input("Enter consultation charges: "))
 diagnostic = float(input("Enter diagnostic charges: "))
 treatment = float(input("Enter treatment charges: "))
 
-# Validate charges
+
 if consultation < 0 or diagnostic < 0 or treatment < 0:
     print("Invalid charges! Charges cannot be negative.")
 
 else:
-    # Calculate total bill
+    
     total_bill = consultation + diagnostic + treatment
 
-    # Apply concessions
+    
     if category == "senior":
         discount = total_bill * 0.20
 
@@ -61,7 +60,7 @@ else:
         print("Invalid patient category.")
 
     else:
-        # Calculate final bill
+        
         final_bill = total_bill - discount
 
         print("\n----- Hospital Bill -----")
@@ -70,17 +69,17 @@ else:
         print("Discount: Rs.", discount)
         print("Final Bill: Rs.", final_bill)
 
-        # Get payment details
+        
         paid = float(input("Enter amount paid: "))
 
-        # Validate payment
+        
         if paid < 0 or paid > final_bill:
             print("Invalid payment amount.")
 
         else:
             balance = final_bill - paid
 
-            # Classify patient
+            
             if balance == 0:
                 status = "Fully Paid"
 
@@ -90,7 +89,7 @@ else:
             else:
                 status = "Unpaid"
 
-            # Display final details
+            
             print("\n----- Payment Details -----")
             print("Amount Paid: Rs.", paid)
             print("Remaining Balance: Rs.", balance)
