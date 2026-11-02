@@ -3,7 +3,7 @@ Develop a Python program to calculate hospital bills by considering consultation
 2. Algorithm
 1. Start the program.
 2. Enter patient name and patient category.
-3. Enter consultation, diagnostic, and treatment charges.
+3. Enter consultation, diagnostic, and treatment charges
 4. Validate that all charges are non-negative.
 5. Calculate the total bill by adding all charges.
 6. Apply concessions based on patient category:
