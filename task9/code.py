@@ -1,5 +1,5 @@
 
-# Multi-Currency Travel Budget Analysis
+
 
 base_currency = input("Enter base currency (INR/USD/EUR): ").upper()
 
@@ -17,13 +17,13 @@ for i in range(n):
     currency = input("Enter currency code: ").upper()
     exchange_rate = float(input("Enter exchange rate: "))
 
-    # Convert expense into base currency
+    
     converted_amount = amount * exchange_rate
 
-    # Calculate conversion fee (2%)
+    
     fee = converted_amount * 2 / 100
 
-    # Calculate total expense
+    
     final_amount = converted_amount + fee
 
     expenses[category] = final_amount
@@ -31,17 +31,15 @@ for i in range(n):
     total_expenses += final_amount
     total_fees += fee
 
-# Enter planned budget
-budget = float(input("\nEnter planned travel budget: "))
 
-# Identify largest expense category
+budget = float(input("\nEnter planned travel budget: "
 largest_category = max(expenses, key=expenses.get)
 largest_amount = expenses[largest_category]
 
-# Calculate remaining budget
+
 remaining_budget = budget - total_expenses
 
-# Display travel budget report
+
 print("\n===== TRAVEL BUDGET REPORT =====")
 
 for category, amount in expenses.items():
