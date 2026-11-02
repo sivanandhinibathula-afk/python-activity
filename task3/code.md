@@ -106,6 +106,9 @@ Enter diagnostic charges: 1000
 Enter treatment charges: 2500
 
 Enter amount paid: 3000
+
+
+
 6. Sample Output
 
 
