@@ -15,8 +15,10 @@ Develop a Python program to calculate employee salary based on basic pay, allowa
 8. Calculate net salary by subtracting deductions from gross salary.
 9. Display the formatted salary statement.
 10. Stop the program.
-11. 
-3. Flowchart
+
+
+ 
+3 Flowchart
 
    <img width="1080" height="1577" alt="image" src="https://github.com/user-attachments/assets/989ff4d7-a3b2-4d9e-a61a-eaa6b064d68c" />
 
@@ -85,7 +87,7 @@ Enter allowances: 5000
 Enter overtime amount: 3000
 Enter incentives: 2000
 
-6. Sample Output
+6 Sample Output
 
 7. ========== SALARY STATEMENT ==========
 
