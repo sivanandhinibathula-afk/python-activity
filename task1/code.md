@@ -35,20 +35,7 @@ The system should:
 9. Display rejected students separately.
 10. Stop.
 3. Flowchart
-4. 
-   
-<img width="972" height="1600" alt="image" src="https://github.com/user-attachments/assets/01bb6aeb-c5d6-4d8b-8c0e-9656a8e77006" />
-
-
-
-
-
-
-
-
-teemanbelajar.blogspot.com
-
-
+4. <img width="972" height="1600" alt="image" src="https://github.com/user-attachments/assets/6c0c6f51-4f79-48f2-9ab2-057ea85fa025" />
 Flowchart explanation:
 - Start the program.
 - Enter student information.
@@ -59,68 +46,103 @@ Flowchart explanation:
 - Display the scholarship allocation results.
 - End the program.
 4. Source Code (Python)
-        "income": income    }    # Check eligibility    if (aggregate >= MIN_AGGREGATE and        all(mark >= MIN_SUBJECT_MARK for mark in subject_marks) and        attendance >= MIN_ATTENDANCE and        income <= MAX_INCOME):        eligible_students.append(student)    else:        rejected_students.append(student)# Sort eligible studentseligible_students.sort(    key=lambda s: (        -s["aggregate"],        -s["attendance"],        s["income"]    ))# Display eligible studentsprint("\n========== SCHOLARSHIP ALLOCATION ==========")if eligible_students:    print("\nEligible Students:")    print("-" * 75)    print("Rank\tName\t\tAggregate\tAttendance\tIncome")    print("-" * 75)    for rank, student in enumerate(eligible_students, start=1):        print(            rank, "\t",            student["name"], "\t\t",            student["aggregate"], "\t\t",            student["attendance"], "\t\t",            student["income"]        )else:    print("\nNo students are eligible for scholarship.")# Display rejected studentsprint("\nRejected Students:")if rejected_students:    for student in rejected_students:        print(student["name"], "- Not eligible")else:    print("No rejected students.")print("\nScholarship allocation completed.")
+  
+# University Scholarship Allocation System
 
+# Eligibility Criteria
+MIN_AGGREGATE = 75
+MIN_SUBJECT_MARK = 50
+MIN_ATTENDANCE = 75
+MAX_INCOME = 250000
 
+students = []
+eligible_students = []
+rejected_students = []
 
+# Input number of students
+n = int(input("Enter number of students: "))
+
+# Collect student details
+for i in range(n):
+    print("\nEnter details of Student", i + 1)
+
+    name = input("Enter student name: ")
+    aggregate = float(input("Enter aggregate marks: "))
+
+    subject_count = int(input("Enter number of subjects: "))
+    subject_marks = []
+
+    for j in range(subject_count):
+        mark = float(input("Enter subject " + str(j + 1) + " marks: "))
+        subject_marks.append(mark)
+
+    attendance = float(input("Enter attendance percentage: "))
+    income = float(input("Enter annual family income: "))
+
+    student = {
+        "name": name,
+        "aggregate": aggregate,
+        "subjects": subject_marks,
+        "attendance": attendance,
+        "income": income
+    }
+
+    # Check eligibility
+    if (aggregate >= MIN_AGGREGATE and
+        all(mark >= MIN_SUBJECT_MARK for mark in subject_marks) and
+        attendance >= MIN_ATTENDANCE and
+        income <= MAX_INCOME):
+
+        eligible_students.append(student)
+
+    else:
+        rejected_students.append(student)
+
+# Sort eligible students
+eligible_students.sort(
+    key=lambda s: (
+        -s["aggregate"],
+        -s["attendance"],
+        s["income"]
+    )
+)
+
+# Display eligible students
+print("\n========== SCHOLARSHIP ALLOCATION ==========")
+
+if eligible_students:
+    print("\nEligible Students:")
+    print("-" * 75)
+    print("Rank\tName\t\tAggregate\tAttendance\tIncome")
+    print("-" * 75)
+
+    for rank, student in enumerate(eligible_students, start=1):
+        print(
+            rank, "\t",
+            student["name"], "\t\t",
+            student["aggregate"], "\t\t",
+            student["attendance"], "\t\t",
+            student["income"]
+        )
+else:
+    print("\nNo students are eligible for scholarship.")
+
+# Display rejected students
+print("\nRejected Students:")
+
+if rejected_students:
+    for student in rejected_students:
+        print(student["name"], "- Not eligible")
+else:
+    print("No rejected students.")
+
+print("\nScholarship allocation completed.")
 5. Source Input
 The following is a sample input given to the program.
-Enter number of students: 4
-
-Enter details of Student 1
-Enter student name: Anu
-Enter aggregate marks: 90
-Enter number of subjects: 3
-Enter subject 1 marks: 85
-Enter subject 2 marks: 90
-Enter subject 3 marks: 95
-Enter attendance percentage: 90
-Enter annual family income: 200000
-
-Enter details of Student 2
-Enter student name: Ravi
-Enter aggregate marks: 85
-Enter number of subjects: 3
-Enter subject 1 marks: 80
-Enter subject 2 marks: 85
-Enter subject 3 marks: 90
-Enter attendance percentage: 95
-Enter annual family income: 150000
-
-Enter details of Student 3
-Enter student name: Priya
-Enter aggregate marks: 90
-Enter number of subjects: 3
-Enter subject 1 marks: 90
-Enter subject 2 marks: 85
-Enter subject 3 marks: 95
-Enter attendance percentage: 95
-Enter annual family income: 180000
-
-Enter details of Student 4
-Enter student name: Kumar
-Enter aggregate marks: 70
-Enter number of subjects: 3
-Enter subject 1 marks: 75
-Enter subject 2 marks: 65
-Enter subject 3 marks: 70
-Enter attendance percentage: 80
-Enter annual family income: 200000
-
-
+5. Source Input
+The following is a sample input given to the program.
 6. Source Output
 The output for the above input will be:
-========== SCHOLARSHIP ALLOCATION ==========
+6. Source Output
+The output for the above input will be:
 
-Eligible Students:
----------------------------------------------------------------------------
-Rank    Name       Aggregate   Attendance   Income
----------------------------------------------------------------------------
-1       Priya      90.0        95.0         180000.0
-2       Anu        90.0        90.0         200000.0
-3       Ravi       85.0        95.0         150000.0
-
-Rejected Students:
-Kumar - Not eligible
-
-Scholarship allocation completed.
