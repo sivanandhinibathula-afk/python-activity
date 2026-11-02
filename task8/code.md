@@ -1,6 +1,6 @@
 1. Problem Statement
 Develop a Python program to calculate the total manufacturing cost and profitability of a product by considering material costs, labour charges, wastage costs, and machine operating costs. Calculate the total production cost, cost per unit, selling price, total revenue, and profit. Finally, compare the profit with a specified profit target and identify whether the production meets the target.
-2. Algorithm
+3. Algorithm
 1. Start the program.
 2. Enter the product name.
 3. Enter the number of units produced.
