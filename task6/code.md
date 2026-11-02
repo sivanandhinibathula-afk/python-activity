@@ -27,6 +27,7 @@ Develop a Python program to calculate railway fares for multiple passengers base
 3. Flowchart (Mermaid Code)
 
 
+
 flowchart TD
 A([start])-->B[/Enter number of passengers/]
 B-->C[/Enter passenger name, age, distance and class/]
@@ -51,6 +52,7 @@ Q--Yes-->C
 Q--No-->R[Calculate total amount]
 R-->S[/Display final bill/]
 S-->T([stop])
+
 
 
 4. Source Code (Python)
