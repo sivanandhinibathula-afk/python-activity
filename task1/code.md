@@ -1,4 +1,8 @@
 1. Problem Statement
+
+
+
+
 Design and develop a Python program for a University Scholarship Allocation System that evaluates students based on their academic performance, attendance, and family income.
 
 The system should:
@@ -11,7 +15,14 @@ The system should:
    - If aggregate marks are equal, higher attendance gets priority.
    - If both are equal, lower family income gets priority.
 6. Display the final scholarship allocation list with student ranks.
+
+
+
 2. Algorithm
+
+
+
+
 1. Start.
 2. Read the number of students.
 3. For each student, input:
@@ -34,8 +45,17 @@ The system should:
 8. Display the eligible students and their ranks.
 9. Display rejected students separately.
 10. Stop.
+
+
+
+
 3. Flowchart
-4. <img width="972" height="1600" alt="image" src="https://github.com/user-attachments/assets/6c0c6f51-4f79-48f2-9ab2-057ea85fa025" />
+  
+5.  <img width="972" height="1600" alt="image" src="https://github.com/user-attachments/assets/6c0c6f51-4f79-48f2-9ab2-057ea85fa025" />
+
+
+
+
 Flowchart explanation:
 - Start the program.
 - Enter student information.
@@ -45,7 +65,12 @@ Flowchart explanation:
 - Rank eligible students using the tie-breaking rules.
 - Display the scholarship allocation results.
 - End the program.
+
+
 4. Source Code (Python)
+
+
+
   
 # University Scholarship Allocation System
 
@@ -140,6 +165,7 @@ print("\nScholarship allocation completed.")
 5. Source Input
 The following is a sample input given to the program.
 5. Source Input
+
 The following is a sample input given to the program.
 6. Source Output
 The output for the above input will be:
