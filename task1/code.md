@@ -166,9 +166,40 @@ print("\nScholarship allocation completed.")
 The following is a sample input given to the program.
 5. Source Input
 
-The following is a sample input given to the program.
+========== SCHOLARSHIP ALLOCATION ==========
+
+Eligible Students:
+---------------------------------------------------------------------------
+Rank    Name       Aggregate   Attendance   Income
+---------------------------------------------------------------------------
+1       Priya      90.0        95.0         180000.0
+2       Anu        90.0        90.0         200000.0
+3       Ravi       85.0        95.0         150000.0
+
+Rejected Students:
+Kumar - Not eligible
+
+Scholarship allocation completed.
+
+
+
 6. Source Output
-The output for the above input will be:
-6. Source Output
-The output for the above input will be:
+
+
+
+
+========== SCHOLARSHIP ALLOCATION ==========
+
+Eligible Students:
+---------------------------------------------------------------------------
+Rank    Name       Aggregate   Attendance   Income
+---------------------------------------------------------------------------
+1       Priya      90.0        95.0         180000.0
+2       Anu        90.0        90.0         200000.0
+3       Ravi       85.0        95.0         150000.0
+
+Rejected Students:
+Kumar - Not eligible
+
+Scholarship allocation completed.
 
