@@ -1,5 +1,11 @@
 
 1. Problem Statement
+
+
+
+
+
+
 Develop a Python program for campus event financial planning to calculate the total expenses involved in organizing an event, including venue charges, equipment costs, catering expenses, transportation costs, and certificate costs. The program determines the participant contribution amount, calculates sponsorship shortfalls, and identifies the minimum number of registrations required to break even. Finally, it displays a complete financial report indicating whether the event budget is sufficient.
 2. Algorithm
 1. Start the program.
