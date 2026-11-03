@@ -16,13 +16,13 @@ The system should:
    - If both are equal, lower family income gets priority.
 6. Display the final scholarship allocation list with student ranks.
 
-   
+  
+  
+  
+  
+  2.ALGORITHM
 
-
-
-2. ALGORITHM
-
-3. 
+ 
 
 
 
