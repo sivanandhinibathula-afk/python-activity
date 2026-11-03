@@ -72,7 +72,7 @@ Flowchart explanation:
 
 
   
-# University Scholarship Allocation System
+
 
 # Eligibility Criteria
 MIN_AGGREGATE = 75
@@ -162,9 +162,21 @@ else:
     print("No rejected students.")
 
 print("\nScholarship allocation completed.")
+
+
+
+
+
+
+
 5. Source Input
-The following is a sample input given to the program.
-5. Source Input
+
+
+
+
+
+
+
 
 ========== SCHOLARSHIP ALLOCATION ==========
 
@@ -183,7 +195,7 @@ Scholarship allocation completed.
 
 
 
-6. Source Output
+6.SOURCE OUTPUT
 
 
 
