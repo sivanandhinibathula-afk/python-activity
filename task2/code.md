@@ -1,6 +1,14 @@
 1. Problem Statement
 Develop a Python program to calculate household electricity bills based on multiple consumption slabs. The system should calculate electricity charges according to units consumed, add fixed charges and surcharges, apply rebates if applicable, compare electricity bills across several months, and identify unusual increases in monthly bills.
+
+
+
+
+
 2. Algorithm
+
+
+
 1. Start the program.
 2. Read the number of months.
 3. Enter the electricity units consumed for each month.
@@ -18,11 +26,15 @@ Develop a Python program to calculate household electricity bills based on multi
 11. Display monthly bills and unusual increases.
 12. Stop the program.
 3. Flowchart
-4. 
+
 . <img width="1046" height="1600" alt="WhatsApp Image 2026-11-02 at 7 26 47 PM" src="https://github.com/user-attachments/assets/c9059211-6e09-4fb7-937f-e9dc4904f3d8" />
 
 
-5. Source Code (Python)
+4. Source Code (Python)
+
+
+
+
 
 def calculate_bill(units):
 
@@ -54,7 +66,9 @@ def calculate_bill(units):
     return total_bill
 
 
-# Main program
+5.SOURCE  CODE
+
+
 n = int(input("Enter number of months: "))
 
 bills = []
@@ -92,7 +106,7 @@ for i in range(n):
             print("Normal Bill Increase/Change.")
 
 print("\nBilling Process Completed.")
-5. Sample Output
+5. SOURCE  Output
 Enter number of months: 4
 
 Month 1
