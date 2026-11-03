@@ -66,7 +66,7 @@ def calculate_bill(units):
     return total_bill
 
 
-5.SOURCE  CODE
+5.SOURCE  INPUT
 
 
 n = int(input("Enter number of months: "))
@@ -106,7 +106,13 @@ for i in range(n):
             print("Normal Bill Increase/Change.")
 
 print("\nBilling Process Completed.")
-5. SOURCE  Output
+
+
+
+6. SOURCE  Output
+
+
+
 Enter number of months: 4
 
 Month 1
