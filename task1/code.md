@@ -53,7 +53,6 @@ flowchart TD
     O --> P[/Display ineligible students/]
     P --> Q([Stop])
 ```
-
 ## 5. Sample Input
 
 ```
