@@ -30,8 +30,8 @@ Design and develop a Python program for a University Scholarship Allocation Syst
 15. Stop the program.
 
 ## 3. Flowchart 
-``` mermaid
 flowchart TD
+``` mermaid
     A([Start]) --> B[/Enter number of students/]
     B --> C[/Enter student name, subject marks, attendance and income/]
     C --> D[Calculate aggregate marks and percentage]
@@ -52,6 +52,7 @@ flowchart TD
     N --> O[/Display eligible students and ranks/]
     O --> P[/Display ineligible students/]
     P --> Q([Stop])
+
 ```
 ## 5. Sample Input
 
