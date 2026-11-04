@@ -33,7 +33,7 @@ Design and develop a Python program for an Employee Payroll and Deduction Analys
 13. Stop the program.
 
 ## 3. Flowchart (Mermaid Code)
-``` mermaid
+```mermaid
 flowchart TD
     A([Start]) --> B[/Enter number of employees/]
     B --> C[/Enter employee ID and name/]
@@ -62,9 +62,8 @@ flowchart TD
     U --> V{More employees?}
     V -- Yes --> C
     V -- No --> W([Stop])
-    ```
 
-
+```
 
 ## 5. Sample Input
 
@@ -129,5 +128,3 @@ Total Deductions  : Rs. 650.0
 Net Salary        : Rs. 20850.0
 ----------------------------------------
 ```
-
-
