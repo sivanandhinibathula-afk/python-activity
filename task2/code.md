@@ -52,26 +52,6 @@ for i in range(n):
     print("Electricity Bill: Rs.", round(bill, 2))
 
 
-# Compare monthly bills
-print("\n----- Monthly Bill Comparison -----")
-
-for i in range(n):
-
-    print("Month", i + 1, "Bill: Rs.", round(bills[i], 2))
-
-    if i > 0:
-
-        increase = bills[i] - bills[i - 1]
-
-        percentage = (increase / bills[i - 1]) * 100
-
-        if percentage > 30:
-            print("Warning: Unusual increase detected!")
-
-        else:
-            print("Normal Bill Increase/Change.")
-
-print("\nBilling Process Completed.")
 
 
 
