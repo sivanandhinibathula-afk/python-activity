@@ -30,40 +30,6 @@ Develop a Python program to calculate household electricity bills based on multi
 . <img width="1046" height="1600" alt="WhatsApp Image 2026-11-02 at 7 26 47 PM" src="https://github.com/user-attachments/assets/c9059211-6e09-4fb7-937f-e9dc4904f3d8" />
 
 
-4. Source Code (Python)
-
-
-
-
-
-def calculate_bill(units):
-
-    # Calculate charges based on electricity slabs
-    if units <= 100:
-        energy_charge = units * 2
-
-    elif units <= 200:
-        energy_charge = (100 * 2) + (units - 100) * 3
-
-    elif units <= 300:
-        energy_charge = (100 * 2) + (100 * 3) + (units - 200) * 5
-
-    else:
-        energy_charge = (100 * 2) + (100 * 3) + (100 * 5) + (units - 300) * 7
-
-    fixed_charge = 50
-
-    surcharge = energy_charge * 0.05
-
-    # Apply rebate for consumption below 100 units
-    if units < 100:
-        rebate = energy_charge * 0.10
-    else:
-        rebate = 0
-
-    total_bill = energy_charge + fixed_charge + surcharge - rebate
-
-    return total_bill
 
 
 5.SOURCE  INPUT
